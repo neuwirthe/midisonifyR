@@ -9,3 +9,5 @@ Description: Sonify dataframes with MIDI somewhat similar fo ggplot.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/neuwirthe/midisonifyR
+BugReports: https://github.com/neuwirthe/midisonifyR/issues

@@ -1,13 +1,24 @@
 Package: midisonifyR
 Type: Package
-Title: Sonify dataframes with MIDI.
+Title: Sonify dataframes with MIDI
 Version: 0.1.0.0001
 Authors@R: person("Erich", "Neuwirth", , "erich.neuwirth@univie.ac.at", role = c("aut", "cre", "cph"))
 Maintainer: Erich Neuwirth <erich.neuwirth@univie.ac.at>
-Description: Sonify dataframes with MIDI somewhat similar fo ggplot.
+Description: Sonify dataframes with MIDI somewhat similar to ggplot.
     Map variables to pitch, volume, instruments and more.
 License: MIT + file LICENSE
+Depends: 
+    R (>= 4.1)
+Imports:
+    dplyr,
+    midicsvR,
+    midiplayR,
+    miditoolsR,
+    purrr,
+    rlang,
+    utils
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/neuwirthe/midisonifyR
 BugReports: https://github.com/neuwirthe/midisonifyR/issues
+RoxygenNote: 7.3.1

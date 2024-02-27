@@ -1,0 +1,52 @@
+---
+title: "test"
+format: html
+---
+
+
+```{r}
+library(dplyr)
+```
+
+```{r}
+my_df <-
+  tibble(
+    x=c(0,4,7,7,19,19,16,16),
+    y=c(1,1,1,2,1,2,1,2)
+  )
+```
+
+```{r}
+my_df |>
+  note_events(props(pitch=x,duration=y,ww=y),
+              base_pitch=60,
+              base_time=250,
+              instrument=36) |>
+  play()
+```
+
+```{r}
+drum_df <-
+  tibble(x=rep(1,16),y=rep(c(1,rep(0.6,3)),4))
+```
+
+```{r}
+load_all() 
+```
+
+
+```{r}
+drum_df |>
+  drum_events(props(duration=x,velocity=y),
+              base_time=350) |>
+ play()
+```
+
+```{r}
+drum_df |>
+  bind_cols(drx=60) |>
+    drum_events(props(duration=x,velocity=y,drum=drx),
+              base_time=350) |>
+  play()midi
+```
+

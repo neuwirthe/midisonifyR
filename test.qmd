@@ -47,6 +47,6 @@ drum_df |>
   bind_cols(drx=60) |>
     drum_events(props(duration=x,velocity=y,drum=drx),
               base_time=350) |>
-  play()midi
+  play()
 ```
 
